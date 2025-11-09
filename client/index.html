@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harikiran Canvas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 Harikiran Canvas</h1>
+            <div class="user-info">
+                <input type="text" id="userName" placeholder="Enter your name" maxlength="20">
+                <input type="text" id="roomId" placeholder="Room ID (leave empty for new room)" maxlength="20">
+                <button id="joinBtn">Join Room</button>
+                <div id="connectionStatus" class="status disconnected">Disconnected</div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <aside class="toolbar">
+                <div class="tool-section">
+                    <h3>Tools</h3>
+                    <div class="tool-buttons">
+                        <button id="brushTool" class="tool-btn active" data-tool="brush">🖌️ Brush</button>
+                        <button id="eraserTool" class="tool-btn" data-tool="eraser">🧹 Eraser</button>
+                    </div>
+                </div>
+
+                <div class="tool-section">
+                    <h3>Color</h3>
+                    <div class="color-picker">
+                        <input type="color" id="colorPicker" value="#667eea">
+                        <div class="color-presets">
+                            <div class="color-preset" data-color="#667eea" style="background: #667eea"></div>
+                            <div class="color-preset" data-color="#f093fb" style="background: #f093fb"></div>
+                            <div class="color-preset" data-color="#4facfe" style="background: #4facfe"></div>
+                            <div class="color-preset" data-color="#43e97b" style="background: #43e97b"></div>
+                            <div class="color-preset" data-color="#fa709a" style="background: #fa709a"></div>
+                            <div class="color-preset" data-color="#30cfd0" style="background: #30cfd0"></div>
+                            <div class="color-preset" data-color="#ff6b6b" style="background: #ff6b6b"></div>
+                            <div class="color-preset" data-color="#c471ed" style="background: #c471ed"></div>
+                            <div class="color-preset" data-color="#12c2e9" style="background: #12c2e9"></div>
+                            <div class="color-preset" data-color="#764ba2" style="background: #764ba2"></div>
+                            <div class="color-preset" data-color="#ff9a9e" style="background: #ff9a9e"></div>
+                            <div class="color-preset" data-color="#000000" style="background: #000000"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tool-section">
+                    <h3>Stroke Width</h3>
+                    <input type="range" id="strokeWidth" min="1" max="50" value="5">
+                    <span id="strokeWidthValue">5px</span>
+                </div>
+
+                <div class="tool-section">
+                    <h3>Actions</h3>
+                    <div class="action-buttons">
+                        <button id="undoBtn" class="action-btn">↶ Undo</button>
+                        <button id="redoBtn" class="action-btn">↷ Redo</button>
+                        <button id="clearBtn" class="action-btn danger">🗑️ Clear</button>
+                    </div>
+                </div>
+
+                <div class="tool-section">
+                    <h3>Online Users</h3>
+                    <div id="usersList" class="users-list"></div>
+                </div>
+            </aside>
+
+            <div class="canvas-container">
+                <canvas id="drawingCanvas"></canvas>
+                <canvas id="cursorCanvas"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="./canvas.js"></script>
+    <script type="module" src="./websocket.js"></script>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
+
