@@ -8,23 +8,23 @@ A multi-user drawing application where multiple people can draw simultaneously o
 
 Here are the demo screenshots showcasing the application:
 
-#### 1. Main Application Interface
+#### 1.
 ![Main Interface](photos/1.png)
 *Beautiful gradient design with modern UI*
 
-#### 2. Real-Time Collaboration
+#### 2. 
 ![Real-Time Collaboration](photos/2.png)
 *Multiple users drawing simultaneously*
 
-#### 3. Multiple Users Drawing
+#### 3. 
 ![Multiple Users](photos/3.png)
 *Shared canvas with real-time synchronization*
 
-#### 4. User Interface & Toolbar
+#### 4. 
 ![UI and Toolbar](photos/4.png)
 *Complete toolbar with all drawing tools*
 
-#### 5. Collaborative Session
+#### 5. 
 ![Collaborative Session](photos/5.png)
 *Active collaboration with user cursors visible*
 
@@ -32,7 +32,7 @@ Here are the demo screenshots showcasing the application:
 
 Watch the complete walkthrough and demonstration:
 
-**📹 [Watch Demo Video](video/1.mp4)**
+**📹 [Watch Demo Video](https://youtu.be/Jvvay24LPb4)**
 
 The demo video includes:
 - ✅ Setting up and joining rooms
