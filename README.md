@@ -336,11 +336,6 @@ This project was developed as a comprehensive assignment demonstrating:
 - Conflict resolution strategies
 - TypeScript implementation
 
-Estimated development time: 15-20 hours
-
-## 📄 License
-
-MIT License - feel free to use this project for learning and development.
 
 ## 🤝 Contributing
 
